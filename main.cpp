@@ -4,8 +4,8 @@
 
 
 int main(){
-	DataRetriever dr("data/train-ubyte");
-	DataRetriever testdr("data/t10k-ubyte");
+	DataRetriever dr("data/training");
+	DataRetriever testdr("data/testing");
 
 	SimpleNetwork sn;
 	sn.setEta(0.5);
@@ -13,7 +13,7 @@ int main(){
 	sn.setTrainingData(&dr);
 	sn.initialize(200);
 
-	for(int i=0;i!=20;i++){
+	for(int i=0;i!=100;i++){
 		dr.setIndex(0);
 		for(int trainj=0; trainj!=5000; trainj++){
 			sn.train();
