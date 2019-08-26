@@ -6,9 +6,9 @@ Download and extract the files from http://yann.lecun.com/exdb/mnist/ into the f
 
 Change the file names as described below.
 
-train-images-idx3-ubyte -> training-images
-train-labels-idx3-ubyte -> training-labels
-t10k-images-idx3-ubyte -> testing-images
+train-images-idx3-ubyte -> training-images\
+train-labels-idx3-ubyte -> training-labels\
+t10k-images-idx3-ubyte -> testing-images\
 t10k-labels-idx3-ubyte -> testing-labels
 
 ## Usage
